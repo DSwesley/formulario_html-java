@@ -1,0 +1,43 @@
+
+<!-- Na atividade prática deste módulo, você irá praticar todos os conceitos aprendidos. Se tiver dúvidas, retome o passo a passo nas aulas.
+1) Crie um formulário HTML que possua dois campos numéricos:
+campo A
+campo B
+2) Insira um botão para submeter o formulário.
+3) Crie uma validação no JavaScript, na qual o formulário será válido caso o número B seja maior que o número A.
+4) Exiba uma mensagem positiva para o usuário quando o formulário for válido e uma mensagem negativa quando for inválido.
+5) Suba no Github no repositório do curso em uma branch chamada exercicio_html_js. -->
+
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario </title>
+    <link rel="stylesheet" href="./form.css" />
+</head>
+<body>
+    <div class="a1">
+        <h1>Formulario</h1>
+        <form id="form">
+            <p class="form-a">Valor A</p>
+            <input type="number" id="campo-a" required placeholder="Digite o valor A" />
+            <p class="error-a">
+            </p>
+            <p class="form-b"> Valor B</p>
+            <input type="number" id="campo-b" required placeholder="Digite o valor B" />
+            <p class="error-b">
+            </p>
+            <br/><br/>
+            <p class="permissao">
+            </p>
+            <button id="botao" type="submit">Enviar</button>
+        </form>
+        <p class="ok">
+        </p>
+    </div>
+    <script src="./form.js"></script>
+</body>
+</html>

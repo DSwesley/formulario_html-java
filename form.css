@@ -1,0 +1,88 @@
+
+/* Na atividade prática deste módulo, você irá praticar todos os conceitos aprendidos. Se tiver dúvidas, retome o passo a passo nas aulas.
+1) Crie um formulário HTML que possua dois campos numéricos:
+campo A
+campo B
+2) Insira um botão para submeter o formulário.
+3) Crie uma validação no JavaScript, na qual o formulário será válido caso o número B seja maior que o número A.
+4) Exiba uma mensagem positiva para o usuário quando o formulário for válido e uma mensagem negativa quando for inválido.
+5) Suba no Github no repositório do curso em uma branch chamada exercicio_html_js. */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+
+}
+
+.a1 {
+    margin: 150px auto;
+    max-width: 300px;
+    width: 100%;
+}
+
+form {
+    margin-top: 20px;
+}
+
+input, textarea, button {
+    display: block;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    resize: none;
+}
+
+button {
+    background-color: #09439b;
+    border: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    font-style: italic;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #6d97d4;
+}
+
+input:focus, textarea:focus {
+    outline-color: #09439b;
+}
+
+h1 {
+    color: #09439b;
+    font-weight: bold;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.form-a {
+    color: #09439b;
+    font-weight: bold;
+}
+
+.form-b {
+    color: #09439b;
+    font-weight: bold;
+}
+
+.permissao {
+    color: #09439b;
+    font-weight: bold;
+    padding: 5px;
+    text-decoration: none;
+    display: none;
+}
+
+.ok {
+    background-color: #27ae60;
+    padding: 16px;
+    color: #fff;
+    display: none;
+}
