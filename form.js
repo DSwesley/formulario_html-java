@@ -23,10 +23,12 @@ form.addEventListener('submit', function (e) {
 
     const valorA = parseInt(campoA.value);                 // declarei a variavel 'valorA' apenas receba numero inteiro, apesar de ser type-number no html
     const valorB = parseInt(campoB.value);                 // declarei a variavel 'valorB' apenas receba numero inteiro, apesar de ser type-number no html
-
+    sucesso.style.display = 'block';
+    
     if (valorB < valorA) {
                                                            // caso A for maior que B ->
         errorB.style.display = 'block';
+        errorA.style.display = 'block';
         sucesso.textContent = 'O valor B precisa ser maior que o valor A';
     } 
     else if (valorB === valorA) {
